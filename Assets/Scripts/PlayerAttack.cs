@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    [SeralizeField] private float attackCooldown;
+    [SerializeField] private float attackCooldown;
     private Animator anim;
     private PlayerMovement playerMovement; 
-    privae float cooldownTimer = Mathf.infinity;
+    private float cooldownTimer = Mathf.Infinity;
 
     private void Awake()
     {
         anim = GetComponent<Animator>();
-        playerMovement = GetComponent<playerMovement>();
+        playerMovement = GetComponent<PlayerMovement>();
     }
 
     private void Update()
@@ -27,6 +27,8 @@ public class PlayerAttack : MonoBehaviour
 
     private void Attack()
     {
-
+        anim.SetTrigger("attack");
+        cooldownTimer = 0;
+        //pool fireballs
     }
 }
