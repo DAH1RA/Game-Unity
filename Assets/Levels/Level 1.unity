@@ -9508,6 +9508,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Saw
       objectReference: {fileID: 0}
+    - target: {fileID: 174221527380774484, guid: f9525dd0e8c727348a5c161925a98814, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9525dd0e8c727348a5c161925a98814, type: 3}
 --- !u!1001 &1150650977282012392
